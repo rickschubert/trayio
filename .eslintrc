@@ -1,0 +1,32 @@
+{
+    "extends": "eslint:recommended","root": true,
+    "parser": "babel-eslint",
+    "plugins": [ "babel" ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js"],
+          "paths": ["."]
+        }
+      }
+    },
+    "rules": {
+      "arrow-parens": [2, "always"],
+      "comma-dangle": [2, "always-multiline"],
+      "func-names": 2,
+      "linebreak-style": [2, "unix"],
+      "no-console": 2,
+      "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+      "semi": [2, "never"]
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "globals": {
+      "browser": true,
+      "$": true,
+      "$$": true
+    }
+  }
